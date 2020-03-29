@@ -1,0 +1,5 @@
+rootProject.name = 'admob'
+include ':@react-native-firebase_admob'
+project(':@react-native-firebase_admob').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/admob/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
